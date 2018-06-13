@@ -39,7 +39,7 @@ def turn(board)
     input = gets.strip # convert value
     location = input_to_index(input)
 
-    if valid_move?(board,index) == false #value check
+    if valid_move?(board,location) == false #value check
         puts "Not a valid choice. Please try again"
       else
         boolCheck = true
