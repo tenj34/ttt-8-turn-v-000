@@ -43,7 +43,7 @@ def turn(board)
     if valid_move?(board,location) == false #value check forced entry
       puts "Not a valid move. Please try again."
     else
-      boolCheck = true
+      boolCheck = true #exit the loop
       move(board,location,)
       display_board(board)
 
