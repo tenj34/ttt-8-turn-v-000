@@ -50,20 +50,3 @@ def turn(board)
     end
   end
 end
-
-
-=begin
-boolCheck = false
-while boolCheck == false
-  input = gets.strip # convert value
-  location = input_to_index(input)
-
-  if valid_move?(board,location) == false #value check
-      puts "Not a valid choice. Please try again"
-    else
-      boolCheck = true
-      move(board,user_input,current_player(board))
-      display_board(board)
-    end
-  end
-=end
