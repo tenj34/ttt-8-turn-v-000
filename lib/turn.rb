@@ -37,7 +37,7 @@ def turn(board)
   boolCheck = false
   while boolCheck == false
     input = gets.strip # convert value
-    index = input_to_index(input)
+    location = input_to_index(input)
 
     if valid_move?(board,index) == false #value check
         puts "Not a valid choice. Please try again"
