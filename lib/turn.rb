@@ -1,13 +1,8 @@
 def display_board(board)
-   print ('    |   |   ')
-   print ('' +board[0]+ '    | ' +board[1]+ '  |   ' +board[2] )
-   print ('    |   |   ')
-   print ('---------------')
-   print ('    |   |   ')
-   print ('' +board[3]+ '    | ' +board[4]+ '  | ' +board[5] )
-   print ('    |   |   ')
-   print('-----------------')
-   print ('    |   |   ')
-   print ('' +board[6]+ '    | ' +board[7]+ '  |' +board[8] )
-   print ('    |   |   ')
+    puts " #{board[0]} | #{board[1]} | #{board[2]} "
+    puts "-----------"
+    puts " #{board[3]} | #{board[4]} | #{board[5]} "
+    puts "-----------"
+    puts " #{board[6]} | #{board[7]} | #{board[8]} "
+
 end
