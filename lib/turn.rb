@@ -34,9 +34,11 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-   boolCheck = false
+  boolCheck = false
   while boolCheck == false
     user_input = gets.strip # convert value
+    index=input_to_index(user_input)
+
     if valid_move?(board,user_input) == false #value check
         puts "Not a valid choice. Please try again"
       else
@@ -44,5 +46,4 @@ def turn(board)
         move(board,user_input,current_player(board))
         display_board(board)
       end
-    end
 end
