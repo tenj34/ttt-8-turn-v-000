@@ -34,6 +34,14 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
+  boolCheck  = false
+
+  while boolCheck == false
+    input = gets.strip # convert the value
+    location = input_to_index(input)
+    break
+
+  end
 end
 
 
