@@ -38,8 +38,16 @@ def turn(board)
 
   while boolCheck == false
     input = gets.strip # convert the value
-    location = input_to_index(input)
-    break
+    location = input_to_index(input) #converted to integer
+
+    if valid_move?(board,location) == false #value check forced entry
+      puts "Not a valid move. Please try again."
+    else
+      boolCheck = true
+      move(board,location,)
+      display_board(board)
+
+    end
 
   end
 end
