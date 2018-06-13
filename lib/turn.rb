@@ -17,9 +17,17 @@ end
 
 def position_taken?(board,index)
 
-if board[index] == " " || board[index] == "" || board[index] == nil
-  return false
-else
-  return true
+  if board[index] == " " || board[index] == "" || board[index] == nil
+    return false
+  else
+    return true
+  end
 end
+
+def input_to_index (user_input)
+  "#{user_input}".to_i - 1#input converted to integer
+end
+
+def move(array,index,value = "X" )
+  array[index] = value
 end
